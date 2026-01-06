@@ -791,7 +791,7 @@
 #endif
 
 // @section multi stepper
-
+#define NO_AUTO_ASSIGN_WARNING
 /**
  * Multi-Stepper / Multi-Endstop
  *
