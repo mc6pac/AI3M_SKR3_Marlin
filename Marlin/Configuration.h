@@ -689,9 +689,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // Current PID settings for v5 J-type hotends with 40W heater cartridge and 100k thermistor.
-    #define DEFAULT_Kp  24.22
-    #define DEFAULT_Ki   1.86
-    #define DEFAULT_Kd  78.97
+    #define DEFAULT_Kp  23.06
+    #define DEFAULT_Ki   1.68
+    #define DEFAULT_Kd  79.33
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -778,7 +778,7 @@
 
   // Anycubic i3 Mega with 250W bed and 100k thermistor
   #define DEFAULT_bedKp 70.90
-  #define DEFAULT_bedKi 13,85
+  #define DEFAULT_bedKi 13.85
   #define DEFAULT_bedKd 242.02
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
@@ -1198,7 +1198,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 450 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 384 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1685,7 +1685,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
